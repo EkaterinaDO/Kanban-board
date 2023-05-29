@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0067A3;
+    min-height: 70px;
+    max-width: 100%;
+    color: #ffffff;
+    padding: 0 20px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.counts {
+    margin-right: 10px;
+    display: flex;
+    word-spacing: normal;
+}
+
+.counts > p {
+    margin-right: 20px;
+}
+
+
+
+
+
+@media (max-width: 500px) {
+    .footer {
+        display: none;
+    }
+}

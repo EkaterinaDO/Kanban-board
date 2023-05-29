@@ -1,0 +1,140 @@
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 6.8px;
+    transform: scale(1);
+    position: relative;
+    transition: transform 0.1s linear;
+}
+
+.btn::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: inherit;
+}
+
+.btn:hover {
+    transform: scale(0.95);
+}
+
+.btn:hover::after {
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5) inset;
+    transition: box-shadow 0.1s linear;
+}
+
+.btn:focus-visible {
+    transform: scale(0.95);
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+}
+
+.btn:active {
+    transform: scale(0.90);
+}
+
+.btn:active::after {
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.5) inset;
+    transition: box-shadow 0.1s linear;
+}
+
+.img-avatar {
+    width: 100%;
+    height: 100%;
+}
+
+.arrow {
+    width: 12px;
+    height: 7.5px;
+    background-image: url(../../../Images/arrow-down.svg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+}
+
+.arrow.is-active {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 70px;
+    right: 9px;
+    min-width: 134px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s linear, opacity 0.2s linear;
+}
+
+.dropdown-menu.is-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown-menu::before {
+    content: '';
+    width: 11px;
+    height: 11px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: -6px;
+    right: 45px;
+    transform: rotate(45deg);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.link {
+    color: black;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link:focus-visible {
+    color: #0067a3;
+    text-decoration: underline;
+    outline: none;
+}
+
+.link:active {
+    color: #0067a3;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 500px) {
+}

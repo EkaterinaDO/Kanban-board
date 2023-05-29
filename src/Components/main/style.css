@@ -1,0 +1,16 @@
+.main {
+    background-color: #0079BF;
+    display: flex;
+    justify-content: space-around;
+    overflow: auto;
+    height: calc(100vh - 186px);
+}
+
+@media (max-width: 500px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        padding: 90px 20px 180px;
+    }
+}

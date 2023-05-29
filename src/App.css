@@ -1,0 +1,14 @@
+.wrapper-content {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    background-color: #1b89c9;
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}

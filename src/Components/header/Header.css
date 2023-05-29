@@ -1,0 +1,25 @@
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0067A3;
+}
+
+.header-text {
+    font-weight: 400;
+    font-size: 28px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .header-text {
+        display: none;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: end;
+
+    }
+}
