@@ -10,7 +10,6 @@ export const TaskDetail = props => {
 
     const task = tasks.find(task => task.id === taskId)
     console.log(task)
-    // объект в котором хранятся все данные о задаче и теперь мы можем егот везде использовать 
 
     const [description, setDescription] = useState(
         task.description ? task.description : 'This task has no description')

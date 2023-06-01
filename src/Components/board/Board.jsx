@@ -40,6 +40,11 @@ export const Board = props => {
         )
     }
     )
-    return <>
-        {moveTask}</>
+
+
+    return (
+        <>
+            {moveTask}
+        </>
+    )
 }

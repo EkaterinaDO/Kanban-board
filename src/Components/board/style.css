@@ -1,6 +1,6 @@
 .board {
     display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin: 20px;
 }

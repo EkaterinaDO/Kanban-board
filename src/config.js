@@ -2,7 +2,7 @@ const LIST_TYPES = {
     BACKLOG: 'backlog',
     READY: 'ready',
     IN_PROGRESS: 'inProgress',
-    FINISHED: 'done',
+    FINISHED: 'finished',
 }
 
 const LIST_COPY_TITLE = {

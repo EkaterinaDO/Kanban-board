@@ -8,6 +8,7 @@
     padding: 0 20px;
     align-items: center;
     font-size: 18px;
+    margin-top: auto;
 }
 
 .counts {
@@ -19,8 +20,6 @@
 .counts > p {
     margin-right: 20px;
 }
-
-
 
 
 

@@ -11,10 +11,10 @@ import { BrowserRouter } from 'react-router-dom'
 function App() {
   const initialState = JSON.parse(window.localStorage.getItem('tasks')) || []
   const [tasks, setTasks] = useState(initialState);
-// так как локал сторэдж хранится строковые данные, а мы пытаемся запиать объект поэтому нужен перевод 
+
   useEffect(() => {
     window.localStorage.setItem('tasks', JSON.stringify(tasks))
-  }, [tasks]) // если любое из этих зависимостий tasks изменитс то ререндеринг выполнится как нужно
+  }, [tasks])
 
 return (
   <>

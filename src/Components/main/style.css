@@ -1,9 +1,8 @@
 .main {
-    background-color: #0079BF;
+    background-color: #1b89c9;
     display: flex;
     justify-content: space-around;
     overflow: auto;
-    height: calc(100vh - 186px);
 }
 
 @media (max-width: 500px) {
